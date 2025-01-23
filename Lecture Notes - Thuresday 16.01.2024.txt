@@ -1,0 +1,7 @@
+Lecture Notes - Thuresday 16.01.2024 Lecture:
+
+Main topics: 
+	- Going through my notes during grading the first Python test
+	- What is standard Python function looks like. Read more about pep8 and styling in Python. Read 	  and install 2 linting extensions: Pylint and Flake8, to improve your Python code style and 	    	  align with standards.
+	- Reviewing command line commands such as pwd, cd, ls -l, ls -larth, mkdir and touch.
+	- Explaining File permissions, what are the 3 groups, what r,w,x means on terminal in files list 	  ls-l. How to change file permission using chmod command (check the supplementary material).

@@ -1,0 +1,26 @@
+Lecture Notes - Friday 17.01.2024 Lecture: Branching, pull requests and merging in Git
+
+Exercise:
+
+- The exercise implementation is done through Pair Programming, say Person 1 (the Driver) and Person 2 (Navigator):
+
+- Round 1 (Person 1 acts as a Driver, Person 2 as a Navigator)
+    1. The driver pulls Navigator's repo - created in 10.12.2023 lecture - as local copy. On the other side, the 	Navigator should add the driver as a collaborator in the repo - from settings of the repo. This is 	crucial to authorize the driver to push code to the Navigator's repo.
+    2. The driver creates a new branch (xbranch), and then to use git checkout -b xbranch command to ceate a 	branch
+    3. Driver creates a .py file of a name addition.py
+    4. Driver adds a function in addition.py, the function returns the sum of 2 numbers, the function accepts a, b 	as arguments for that
+    5. The driver pushes the branch and changes to the remote, through the following commands:
+	a. git status (for indentifying the changes in the repo), the changes should appears in red
+	b. git add . (for staging the changes), to stage all changes (read more about how to stage a single file 		instead of all changes at once!)
+	c  git status, the changes should appears in green - it means it has staged successfully
+	d. git commit -m "addition function added." (for committing the changes)
+	e. git push  (to push the the remote)
+
+    6. In the remote Github page, the drivers creates a pull request which should appear on repo's GitHub page.
+
+    6. Then, the navigator reviews the changes and then ask for one more change/adjustment on the .py file, the 	driver responds and reflects the changes. After that, the driver pushes through Vscode lef-side 	interface - instead of terminal like in the first change.
+    7. Once all is good and changes/reviewing is approved, The navigator to merge xbranch to main branch
+    8. Once the merge is done, delete the xbranch on the local and the remote (Assignment)
+
+- Round 2 (Person 2 acts as Driver, Person 1 as a Navigator)
+    follows same steps above ...
