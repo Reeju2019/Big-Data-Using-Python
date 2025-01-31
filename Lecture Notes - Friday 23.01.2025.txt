@@ -1,0 +1,20 @@
+Lecture Notes - Thursday 23.01.2025 Lecture:
+
+ 1. Warm Up Exercise:
+	Write a script to list files and/folders in a directory, use libs/modules like os or Pathlib moudule:
+		The input: a path of directory.
+		The output: list of absolute paths of files and folders in the chosen directory.
+		Edge cases: No edge cases.
+
+
+2. Standard Function (code and style) in Python, explained through writing a function:
+	1. Function Docstring
+	2. Typehinting: what?
+			Why? Readability, warning at having wrong assignments, getting context methods.
+	3. The difference between the interpreter -in Python as example- and complier - in C++ as example.
+	4. Writing Docstring using autoDocstring extension, in both Sphnix and google style.
+	5. Explaining Sphinix for generating Python code documentation.
+	6. Assignment: Using Sphinix to generate code documentation, use this video for your implementation: 			       		   		   https://www.youtube.com/watch?v=b4iFyrLQQh4
+	
+
+ 			
