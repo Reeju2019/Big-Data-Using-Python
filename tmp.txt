@@ -1,0 +1,46 @@
+ecommerce-pipeline/
+│── docker-compose.yml           # Orchestrates all services
+│── .env                         # Environment variables
+│── README.md                    # Project documentation
+│
+├── data/                        # Dataset & sample data
+│   ├── olist.sqlite             # E-Commerce SQLite dataset
+│   ├── seed_data.sql            # Optional: SQL script for initial DB setup
+│
+├── ingestion/                    # Data ingestion scripts
+│   ├── kafka_producer.py         # Generates streaming data
+│   ├── airflow_dag.py            # Batch ETL ingestion
+│   ├── Dockerfile                # Dockerfile for ingestion service
+│
+├── storage/                      # Database setup
+│   ├── postgres/                 
+│   │   ├── init.sql              # PostgreSQL schema setup
+│   │   ├── Dockerfile            # Dockerfile for PostgreSQL
+│   ├── mongodb/                  
+│   │   ├── init.js               # MongoDB initial configuration
+│   │   ├── Dockerfile            # Dockerfile for MongoDB
+│   ├── neo4j/                    
+│   │   ├── Dockerfile            # Dockerfile for Neo4j
+│   ├── minio/                    
+│   │   ├── Dockerfile            # Dockerfile for MinIO
+│
+├── processing/                   # Data processing with Spark
+│   ├── spark_streaming.py        # Real-time processing
+│   ├── batch_etl.py              # Batch processing
+│   ├── Dockerfile                # Dockerfile for Spark service
+│
+├── ml/                           # Machine learning models & graphs
+│   ├── fraud_detection.py        # ML fraud detection model (Scikit-learn)
+│   ├── recommendation.py         # Neo4j-based recommendation system
+│   ├── train_model.py            # ML model training script
+│   ├── graph_visualization.py    # Generates graphs after ML testing
+│   ├── Dockerfile                # Dockerfile for ML service
+│
+├── api/                          # API for serving processed data
+│   ├── app.py                    # FastAPI/Flask API
+│   ├── requirements.txt          # Dependencies
+│   ├── Dockerfile                # Dockerfile for API service
+│
+└── scripts/                      # Utility scripts
+    ├── utils.py                  # Common helper functions
+    ├── generate_dummy_data.py     # Simulated data for testing
